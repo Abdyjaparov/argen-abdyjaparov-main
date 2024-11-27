@@ -1,6 +1,6 @@
 /* Общий стиль футера */
 .footer {
-    background-color: #1e3a5f;
+    background-color: rgba(53, 53, 53, 0.462);
     padding: 30px 60px;
     color: #f2f5f7;
     font-family: 'Georgia', serif;

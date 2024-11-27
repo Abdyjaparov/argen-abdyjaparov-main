@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+body {
+  background-image: url('/public/backround.png'); /* Путь к вашему изображению */
+  background-size: cover; /* Изображение будет масштабироваться так, чтобы покрыть весь экран */
+  background-position: center; /* Центрируем изображение */
+  background-attachment: fixed; /* Фиксируем фоновое изображение при прокрутке */
+  background-repeat: no-repeat; /* Не повторяем фоновое изображение */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

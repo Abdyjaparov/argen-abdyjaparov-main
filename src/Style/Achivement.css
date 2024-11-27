@@ -1,6 +1,6 @@
 /* Основной контейнер для достижений */
 .achievements {
-    background-color: #f9fafb; /* Легкий фон для контейнера */
+    background-color: rgba(240, 233, 233, 0.5);
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -12,11 +12,11 @@
 /* Заголовки для секций (Спортивные и Академические достижения) */
 .achievements h1 {
     font-size: 36px;
-    color: #1e3a5f;
+    color: #767474;
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
-    border-bottom: 2px solid #4a90e2;
+    border-bottom: 2px solid #0c0f0f;
     padding-bottom: 10px;
 }
 
@@ -47,15 +47,21 @@
 
 /* Отступы для мобильных устройств */
 @media (max-width: 768px) {
-    .achievements-container {
-        padding: 20px;
+    /* Основной контейнер для достижений */
+    .achievements {
+        padding: 20px; /* Уменьшаем отступы для мобильных устройств */
     }
     
-    .achievements-container h1 {
-        font-size: 28px;
+    .achievements h1 {
+        font-size: 28px; /* Уменьшаем размер заголовка на мобильных */
     }
 
-    .achievements-container h3 {
-        font-size: 16px;
+    .achievements h3 {
+        font-size: 16px; /* Уменьшаем размер текста на мобильных */
+    }
+
+    /* Уменьшаем отступы для спортивных и академических достижений */
+    .sport, .academic {
+        margin-bottom: 40px; /* Уменьшаем отступы между секциями */
     }
 }
