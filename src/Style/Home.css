@@ -1,0 +1,61 @@
+/* Основной контейнер */
+.container.about-page {
+    background-color: #f9fafb; /* Легкий фон для общего контейнера */
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок страницы */
+.container.about-page h1 {
+    font-size: 36px;
+    color: #1e3a5f;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+}
+
+/* Изображение */
+.image2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image2:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Основной текст */
+.container.about-page p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+.skills {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    text-align: center;
+}
+
+
+
