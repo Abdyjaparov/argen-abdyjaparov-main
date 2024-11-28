@@ -1,30 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
+
+
 /* Основной контейнер карусели */
 .carousel {
-    position: relative;
-    width: 80%; /* Уменьшено до 80% ширины родителя */
-    height: 400px; /* Фиксированная высота для средней компактности */
-    margin: 20px auto;
-    perspective: 1000px; /* 3D-эффект */
-    overflow: hidden;
-    border-radius: 10px; /* Скруглённые углы для аккуратного вида */
-    background-color: rgba(240, 233, 233, 0.5); /* Фон для заполнения */
-    padding: 100px;
-  }
+  position: relative;
+  width: 100%; /* Растягиваем на всю ширину */
+  max-width: 1200px; /* Устанавливаем максимальную ширину */
+  height: 400px; 
+  margin: 20px auto;
+  perspective: 1000px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgba(240, 233, 233, 0.5);
+  padding: 100px;
+}
   
   /* Стили для каждого слайда */
   .slide {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%; /* Изображение занимает 80% ширины контейнера */
-    height: 90%; /* Изображение занимает 90% высоты контейнера */
-    object-fit: cover; /* Пропорциональное масштабирование для заполнения */
-    border-radius: 8px; /* Скругление краёв изображения */
+    width: 100%; /* Сделать ширину слайда 100% */
+    height: 100%; /* И высоту тоже 100% */
+    object-fit: cover; /* Сохранение пропорций изображения */
+    border-radius: 8px;
     transition: transform 1s ease, opacity 1s ease;
     transform-origin: center center;
     opacity: 0;
     transform: scale(0.8) translate(-50%, -50%);
   }
+  
   
   /* Активный (центральный) слайд */
   .slide.active {
@@ -57,14 +72,30 @@
   /* Адаптивность */
   @media (max-width: 768px) {
     .carousel {
-      width: 90%; /* Уменьшение ширины на мобильных устройствах */
-      height: 300px; /* Компактная высота */
+      width: 100%; /* Уменьшаем ширину до 100% */
+      height: 300px; 
+      padding: 50px;
     }
+    
     .slide {
-      width: 85%; /* Немного меньше ширина слайдов */
-      height: 85%; /* Уменьшение высоты */
+      width: 100%; /* Уменьшаем ширину слайда до 100% */
+      height: 100%; /* Уменьшаем высоту слайда до 100% */
+    }
+    
+    .skills {
+      padding: 20px;
+    }
+  
+    .skill {
+      width: 80px; /* Уменьшаем ширину иконок */
+      margin: 10px;
+    }
+  
+    .intro {
+      font-size: 16px;
     }
   }
+  
 
 /* Стили для основного контейнера "skills" */
 .skills {
